@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog</title>
+  <link rel="stylesheet" href="VasYa.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .blog {
+      width: 84%;
+      max-width: 1200px;
+      margin: 50px auto;
+    }
+
+    .blog h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .descripcion {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .articulos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .articulo {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .articulo img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .contenido h3 {
+      margin-bottom: 10px;
+    }
+
+    .contenido p {
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .contenido a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+      .articulos {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Blog de  taxista</h1>
+
+  <nav role="navigation">
+    <a href="index.html" class="nav-item">Главная</a>
+    <a href="Tarifas-de-taxi-Zaragoza.html" class="nav-item">Tarifas</a>
+    <a href="Sobre-mi.html" class="nav-item">Sobre mi</a>
+    <a href="Blog.html" class="nav-item">Blog</a>
+    <a href="Contactos.html" class="nav-item">Contactos</a>
+  </nav>
+</header>
+
+<main class="blog">
+
+  <h2>Blog</h2>
+  <p class="descripcion">
+    Consejos, noticias y artículos interesantes.
+  </p>
+
+  <section class="articulos">
+
+    <article class="articulo">
+      <img src="imagenes/articulo1.jpg" alt="Imagen del artículo 1">
+
+      <div class="contenido">
+        <h3>Mi primer artículo</h3>
+
+        <p>
+          Una pequeña introducción al contenido de este artículo.
+        </p>
+
+        <a href="articulo1.html">Leer más →</a>
+      </div>
+    </article>
+
+    <article class="articulo">
+      <img src="imagenes/articulo2.jpg" alt="Imagen del artículo 2">
+
+      <div class="contenido">
+        <h3>Consejos para empezar</h3>
+
+        <p>
+          Descubre algunos consejos útiles para comenzar.
+        </p>
+
+        <a href="articulo2.html">Leer más →</a>
+      </div>
+    </article>
+
+    <article class="articulo">
+      <img src="imagenes/articulo3.jpg" alt="Imagen del artículo 3">
+
+      <div class="contenido">
+        <h3>Novedades</h3>
+
+        <p>
+          Todas las novedades y noticias de nuestra web.
+        </p>
+
+        <a href="articulo3.html">Leer más →</a>
+      </div>
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Mi Web. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

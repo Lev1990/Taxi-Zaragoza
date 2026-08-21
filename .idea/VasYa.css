@@ -1,0 +1,158 @@
+:root {
+    --main-color: #ffc107;
+    --secondary-color: #212121;
+}
+main {
+    flex: 1;
+}
+body {
+    background-color: var(--main-color);
+    font-family: "Inter";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #3e3232;
+    padding: 10px;
+}
+.nav-item {
+    flex-direction: row;
+    color: aliceblue;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.nav-item:hover {
+    background-color: #575757;
+}
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 5%;
+}
+.sobremi {
+    text-decoration-color: rgb(231, 5, 5);
+    margin: 10px;
+    padding: 15px;
+    text-decoration-style: double;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 4px rgb(143, 143, 195);
+    background:
+            lineal-gradient(to right, red, yellow), radial-gradient(circle, blue, green);
+    border: 2px groove blue;
+    background-color: #908e8e;
+    border-radius: 0px 0px 20px 20px;
+    cursor:
+            url("/free/cursors/not-allowed.png") 4 1,
+            auto;
+}
+#pedirtaxi {
+    background-color: yellow;
+}
+#parap::first-letter {
+    font-size: 2em;
+    color: blueviolet;
+}
+.boton-pedir:hover {
+    color: red;
+}
+.boton {
+    background-color: rgb(143, 143, 195);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton:hover {
+    background-color: blue;
+}
+.zayavka {
+    background-image: url(https://images.stockcake.com/public/f/3/8/f38dc506-58bd-4ad2-abbc-3fc02404f1b5_large/colorful-abstract-art-stockcake.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #000;
+    width: auto;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.columna {
+    width: 30%;
+}
+.prueba-flex {
+    display: inline-flex;
+    border: #ffc107 solid 2px;
+}
+.item {
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: #3498db;
+    padding: 10px;
+    margin: 5px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg, purple, pink);
+}
+
+.product-item {
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - 40px) / 3);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.product-item:hover {
+    animation: name duration 2sec delay iteration-count center fill-mode;
+    background-color: var(--main-color);
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+.neon {
+    border: 2px solid #39ff14;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+}
+.neon:hover {
+    background-color: #39ff14;
+}
